@@ -1,0 +1,22 @@
+<ul class="links">
+        {% if page.menu == "index" %}
+        <li class="active"><a href="index.html">This is Massively</a></li>
+        <li><a href="generic.html">Generic Page</a></li>
+        <li><a href="elements.html">Elements Reference</a></li>
+        <li><a href="https://blog.ferdi.id">Go to Blog</a></li>
+        {% endif %}
+
+        {% if page.menu == "generic" %}
+        <li><a href="index.html">This is Massively</a></li>
+        <li class="active"><a href="generic.html">Generic Page</a></li>
+        <li><a href="elements.html">Elements Reference</a></li>
+        <li><a href="https://blog.ferdi.id">Go to Blog</a></li>
+        {% endif %}
+
+        {% if page.menu == "elements" %}
+        <li><a href="index.html">This is Massively</a></li>
+        <li><a href="generic.html">Generic Page</a></li>
+        <li class="active"><a href="elements.html">Elements Reference</a></li>
+        <li><a href="https://blog.ferdi.id">Go to Blog</a></li>
+        {% endif %}
+    </ul>
