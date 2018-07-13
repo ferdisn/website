@@ -43,5 +43,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-source: /home/ferdisn/JekyllWeb2
-destination: /home/ferdisn/WebDir/files/www.ferdi.id
+#source: /home/ferdisn/JekyllWeb2
+#destination: /home/ferdisn/WebDir/files/www.ferdi.id
