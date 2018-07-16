@@ -45,3 +45,14 @@ plugins:
 
 #source: /home/ferdisn/JekyllWeb2
 #destination: /home/ferdisn/WebDir/files/www.ferdi.id
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post2"
+      menu: "posts"
+
+show_drafts: true
