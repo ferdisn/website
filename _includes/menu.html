@@ -1,41 +1,45 @@
 <ul class="links">
+        <li
         {% if page.menu == "index" %}
-        <li class="active"><a href="/index.html">This is Massively</a></li>
-        <li><a href="/generic.html">Generic Page</a></li>
-        <li><a href="/elements.html">Elements Reference</a></li>
-        <li><a href="/https://blog.ferdi.id">Go to Blog</a></li>
-        <li><a href="/posts.html">List posts</a></li>
+        class="active"
         {% endif %}
-
+        >
+            <a href="/index.html">Home</a></li>
+        <li
         {% if page.menu == "generic" %}
-        <li><a href="/index.html">This is Massively</a></li>
-        <li class="active"><a href="/generic.html">Generic Page</a></li>
-        <li><a href="/elements.html">Elements Reference</a></li>
-        <li><a href="https://blog.ferdi.id">Go to Blog</a></li>
-        
+        class="active"
         {% endif %}
-
+        >
+            <a href="/generic.html">
+            Generic</a></li>
+        <li
         {% if page.menu == "elements" %}
-        <li><a href="/index.html">This is Massively</a></li>
-        <li><a href="/generic.html">Generic Page</a></li>
-        <li class="active"><a href="/elements.html">Elements Reference</a></li>
-        <li><a href="https://blog.ferdi.id">Go to Blog</a></li>
-        <li><a href="/posts.html">List posts</a></li>
+        class="active"
         {% endif %}
-
+        >
+            <a href="/elements.html">Elements</a></li>
+        <li
         {% if page.menu == "blog" %}
-        <li><a href="/index.html">This is Massively</a></li>
-        <li><a href="/generic.html">Generic Page</a></li>
-        <li class="active"><a href="/elements.html">Elements Reference</a></li>
-        <li><a href="https://blog.ferdi.id">Go to Blog</a></li>
-        <li><a href="/posts.html">List posts</a></li>
+        class="active"
         {% endif %}
-
+        >
+            <a href="/https://blog.ferdi.id">Go to Blog</a></li>
+        <li
         {% if page.menu == "posts" %}
-        <li><a href="/index.html">This is Massively</a></li>
-        <li><a href="/generic.html">Generic Page</a></li>
-        <li><a href="/elements.html">Elements Reference</a></li>
-        <li><a href="https://blog.ferdi.id">Go to Blog</a></li>
-        <li class="active"><a href="/posts.html">List posts</a></li>
+        class="active"
         {% endif %}
+        >
+            <a href="/posts.html">Posts</a></li>
+        <li
+        {% if page.menu == "resources" %}
+        class="active"
+        {% endif %}
+        >
+                <a href="/resources/resources.html">Sumber Daya</a></li>
+        <li
+        {% if page.menu == "about" %}
+        class="active"
+        {% endif %}
+        >
+                        <a href="/about/about.html">Tentang</a></li>
     </ul>

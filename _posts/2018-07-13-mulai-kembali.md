@@ -1,10 +1,7 @@
 ---
-layout: post2
 title:  "Mulai kembali"
 date:   2018-07-13 10:20:00 +0800
-categories: jekyll update
 short_desc : '<p>Sesuatu yang sudah lama <br>ingin dilakukan</p>' 
-menu: posts
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
