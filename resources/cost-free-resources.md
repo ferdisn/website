@@ -1,7 +1,6 @@
 ---
 title: Sumber Daya Bebas Biaya
-layout: resources
-menu: resources
+layout: page
 ---
 <sup>Achtung. Kalau tautannya sudah basi, coba googling nama programnya.</sup>
 

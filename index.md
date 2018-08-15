@@ -3,19 +3,26 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-menu: index
 ---
-<article class="post featured">
-								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">TEST And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions">
-									<li><a href="#" class="button big">Full Story</a></li>
-								</ul>
-							</article>
+<!-- Banner -->
+<section id="banner">
+        <div class="content">
+            <header>
+                <h1>Hi, I’m Ferdi,<br /> all by myself</h1>
+                <p>This should be a tagline</p>
+            </header>
+            <p>That picture is St. Peter's Basilica, its dome. I'm thinking it should be my picture, but I don't have any fancy pic to put here atm.</p>
+            <ul class="actions">
+                <li><a href="#" class="button big">Learn More</a></li>
+            </ul>
+        </div>
+        <span class="image object">
+        {% if jekyll.environment == "production" %}
+        {% assign host = site.github.url   %}
+        {% else %}
+        {% assign host = site.asseturl %}
+        {% endif %}
+
+            <img src="{{ host }}/www/st_peter_basilica.jpg" alt="Dome in St. Peter's Basilica" />
+        </span>
+    </section>

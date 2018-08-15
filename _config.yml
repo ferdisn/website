@@ -53,7 +53,6 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post2"
-      menu: "posts"
+      layout: "post"
 
 show_drafts: true

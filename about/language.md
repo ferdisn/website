@@ -1,7 +1,6 @@
 ---
 title: Bahasa
-layout: about
-menu: about
+layout: generic
 ---
 Sebenarnya saya ingin buat *blog* bahasa Indonesia agar pencarian kata kunci yang berbahasa Inggris oleh pencari Google mengarah ke sini. Banyak sekali pencari informasi dari Indonesia yang sebenarnya kesulitan untuk membaca artikel berbahasa Inggris. Niat saya adalah memperkaya konten berbahasa Indonesia di bidang teknologi informasi.
 

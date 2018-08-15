@@ -1,6 +1,6 @@
     <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
+	Editorial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -12,7 +12,6 @@
         <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<link rel="stylesheet" href="/assets/css/pastie.css" />
-        <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
         <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
@@ -20,108 +19,133 @@
         {% include google-analytics.html %}
         {% endif %}
 	</head>
-	<body class="is-loading">
+	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Welcome</h1>
-						<p>My landing page..</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
+			<!-- Main -->
+				<div id="main">
+					<div class="inner">
+
+						<!-- Header -->
+							<header id="header">
+								<a href="index.html" class="logo"><strong>{{ site.title | escape }}</strong> by Ferdi</a>
+								<ul class="icons">
+									{% if site.twitter_username %} 
+										{% include icon-twitter.html username=site.twitter_username %} 
+									{% endif %}
+									{% if site.github_username %}
+										{% include icon-github.html username=site.github_username %}
+									{% endif %}
+									<!--
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									-->
+								</ul>
+							</header>
+
+							{{ content }}
+
 					</div>
+				</div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
-					</header>
+			<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
 
-				<!-- Nav -->
-					<nav id="nav">
-							{% include menu.html %}
-						<ul class="icons">
-                                {% if site.twitter_username %} 
-                                {% include icon-twitter.html username=site.twitter_username %} 
-                            {% endif %}
-                            {% if site.github_username %}
-                                {% include icon-github.html username=site.github_username %}
-                            {% endif %}
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>							
-						</ul>
-					</nav>
+						<!-- Search -->
+						<!-- 
+							<section id="search" class="alt">
+								<form method="post" action="#">
+									<input type="text" name="query" id="query" placeholder="Search" />
+								</form>
+							</section>
+						-->
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="/index.html">Homepage</a></li>
+									<li>
+										<span class="opener">Resources</span>
+										<ul>
+											<li><a href="/resources/resources.html">Resources</a></li>
+											<li><a href="/resources/reference-apps.html">Reference Apps</a></li>
+											<li><a href="/resources/cost-free-resources.html">Cost Free Resources</a></li>
+										</ul>
+									</li>
+									<li><a href="/posts.html">Blog</a></li>
+								</ul>
+							</nav>
 
-				{{ content }}
+						<!-- Section -->
+						<section>
+								<header class="major">
+									<h2>Tags</h2>
+								</header>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<!-- <section>
-							<form method="post" action="#">
-								<div class="field">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="3"></textarea>
+								<p style="line-height: 3em;">
+									{% for tag in site.tags %}
+										{% assign t = tag | first %}
+										{% assign posts = tag | last %}
+										<a class="button" href="/tags/{{t | downcase | replace:" ","-" }}.html">{{t | downcase | replace:" ","-" }}</a>
+									{% endfor %}
+								</p>
+							</section>
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Recent posts</h2>
+								</header>
+								<div class="mini-posts">
+										{% for post in site.posts limit:3 %}
+										<article>
+												<a href="{{ post.url }}" class="image"><img src="/images/pic07.jpg" alt="" /></a>
+												<p><a href="{{ post.url }}" class="image">{{ post.title }}</a></p>
+										</article>
+										{% endfor %}
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section> -->
-						<section class="split contact">
-							<!-- <section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section> -->
-							<section>
-								<h3>Links</h3>
-								<p><a href="/links.html">(000) 000-0000</a></p>
-							</section> 
-							<section>
-								<h3>Email</h3>
-								<p><a >{{ site.email }}</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-                                        {% if site.twitter_username %} 
-                                            {% include icon-alt-twitter.html username=site.twitter_username %} 
-                                        {% endif %}
-                                        {% if site.github_username %}
-                                            {% include icon-alt-github.html username=site.github_username %}
-                                        {% endif %}
-									<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-									
+									<li><a href="/posts.html" class="button">More</a></li>
 								</ul>
 							</section>
-						</section>
-					</footer>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Ferdi</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+								</header>
+								<p>Hi, I'm active on Twitter, and you can mention me there. But if you prefer email, see below.</p>
+								<ul class="contact">
+									<li class="fa-envelope-o"><a>{{ site.email }}</a></li>
+									<!-- <li class="fa-phone">(000) 000-0000</li> -->
+									<li class="fa-home">Bali - Jakarta<br />
+									Indonesia</li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Ferdi. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+
 					</div>
+				</div>
 
-			</div>
+		</div>
 
 		<!-- Scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/jquery.scrollex.min.js"></script>
-			<script src="/assets/js/jquery.scrolly.min.js"></script>
-			<script src="/assets/js/skel.min.js"></script>
-			<script src="/assets/js/util.js"></script>
-			<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
 
 	</body>
 </html>

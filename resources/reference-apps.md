@@ -1,7 +1,6 @@
 ---
 title: Referensi Aplikasi
-layout: resources
-menu: resources
+layout: page
 ---
 Bicara soal program favorit, bisa memicu perang bintang. Jadi, lebih baik saya utarakan saja program yang biasa saya pakai. Semoga bisa jadi referensi berguna buat pembaca. Di sini belum tentu semuanya bebas biaya atau tergolong perangkat lunak bebas. Saya memakainya karena perkakas ini bekerja bagus untuk saya serta ada akses legal terhadapnya.
 

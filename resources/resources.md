@@ -1,8 +1,12 @@
 ---
-title: Resources
-layout: resources
-menu: resources
+title: Sumber Daya
+layout: page
 ---
+
+## Heading 2
+
+Daftar berikut ini berisi tautan ke sumber daya yang berguna selama perjalanan hidup saya.
+
 | Link | Description |
 | - | - |
 | [Link](https://code.visualstudio.com/docs/languages/markdown) | VSCode Markdown |
@@ -13,3 +17,7 @@ menu: resources
 | [Link](http://freesoftware.zona-m.net/about/) | http://freesoftware.zona-m.net/about/<br>Isinya soal free software. Belum baca detail. Ada sister sitenya di sini: http://stop.zona-m.net/about/. |
 | [Link](https://blog.flameeyes.eu/) | https://blog.flameeyes.eu/ |
 | [Link](https://scotch.io) | https://scotch.io |
+
+<hr class="major" />
+
+Another paragraph.

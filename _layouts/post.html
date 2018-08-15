@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<!-- Content -->
+<section>
+        <ul class="pagination" style="align-content: center;">
+                {% if page.next %} 
+                <li><a href="{{ page.next.url }}" class="button">NEXT</a></li>
+                {% else %}
+                <li><span class="button disabled">NEXT</span></li>                
+                {% endif %}
+                {% if page.previous %} 
+                <li><a href="{{ page.previous.url }}" class="button">PREV</a></li>
+                {% else %}
+                <li><span class="button disabled">PREV</span></li>
+                {% endif %}
+        </ul>
+        
+        <header class="main">
+            <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
+            <h1>{{ page.title }}</h1>
+            {{ page.short_desc }}
+        </header>
+
+        <span class="image main"><img src="/images/pic11.jpg" alt="" /></span>
+
+        {{ content }}
+
+        <hr class="major" />
+
+        <ul class="pagination" style="align-content: center;">
+                {% if page.next %} 
+                <li><a href="{{ page.next.url }}" class="button">NEXT</a></li>
+                {% else %}
+                <li><span class="button disabled">NEXT</span></li>                
+                {% endif %}
+                {% if page.previous %} 
+                <li><a href="{{ page.previous.url }}" class="button">PREV</a></li>
+                {% else %}
+                <li><span class="button disabled">PREV</span></li>
+                {% endif %}
+        </ul>
+
+
+    </section>

@@ -2,6 +2,8 @@
 title:  "A Brief Time In History"
 date:   2018-07-16 13:06:00 +0800
 short_desc : '<p>Mengunjungi kembali<br>masa lalu</p>' 
+tag:
+ - personal
 ---
 Tanggal 14 Juli 2018 menjadi hari yang berkesan bagi saya. Pada hari tersebut salah seorang teman saya melangsungkan acara pernikahan secara agama dan secara sosial di Jakarta. Namun, mari kita kunjungi kembali beberapa detail cerita yang menuntun kepada petualangan singkat saya selama dua hari di kota Jakarta.
 

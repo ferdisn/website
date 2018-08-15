@@ -2,6 +2,10 @@
 title:  "Membuat instalasi Wordpress lokal dan remote dan sinkronisasinya"
 date:   2017-12-23 00:00:00 +0700
 short_desc : '<p>Cadangan<br>energi</p>' 
+tags:
+- administration
+- wordpress
+excerpt: This is an excerpt
 ---
 ### Pengantar ~~Tidur~~
 Situasinya sebagai berikut: Anda punya laptop dan juga punya server di jagat maya, lalu Anda ingin membuat instalasi Wordpress di lokal dan di server tersebut, juga ingin melakukan sinkronisasinya. (Atau cuma saya saja yang mau begini, tidak ada yang tahu).

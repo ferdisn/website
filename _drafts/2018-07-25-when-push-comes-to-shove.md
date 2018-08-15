@@ -2,6 +2,10 @@
 title:  "When Push Comes To Shove"
 date:   2018-07-25 11:45:00 +0800
 short_desc : '<p>Jatah lembur<br>selalu ada</p>' 
+tag:
+ - technology
+ - software
+ 
 ---
 Hari ini saya kembali bekerja setelah pulang dari lembur yang sebenarnya menyiksa.
 
