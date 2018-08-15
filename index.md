@@ -18,5 +18,6 @@ layout: home
         </div>
         <span class="image object">
             <img src="{{ site.asseturl }}/www/st_peter_basilica.jpg" alt="Dome in St. Peter's Basilica" />
+            <img src="{{ site.asseturl }}/www/st_peter_basilica.jpg" alt="Dome in St. Peter's Basilica" />
         </span>
     </section>
