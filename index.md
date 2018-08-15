@@ -18,11 +18,10 @@ layout: home
         </div>
         <span class="image object">
         {% if jekyll.environment == "production" %}
-        {% assign host = site.github.url   %}
+            {% assign host = site.asseturl   %}
         {% else %}
-        {% assign host = site.asseturl %}
+            {% assign host = site.devasseturl %}
         {% endif %}
-
             <img src="{{ host }}/www/st_peter_basilica.jpg" alt="Dome in St. Peter's Basilica" />
         </span>
     </section>
