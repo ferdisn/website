@@ -3,18 +3,19 @@ layout: default
 ---
 <!-- Content -->
 <section>
-        <ul class="pagination" style="align-content: center;">
+
                 {% if page.next %} 
-                <li><a href="{{ page.next.url }}" class="button">NEXT</a></li>
+                <a href="{{ page.next.url }}" class="button">NEXT</a>
                 {% else %}
-                <li><span class="button disabled">NEXT</span></li>                
+                <span class="button disabled">NEXT</span>              
                 {% endif %}
                 {% if page.previous %} 
-                <li><a href="{{ page.previous.url }}" class="button">PREV</a></li>
+                <a href="{{ page.previous.url }}" class="button" style="float:right;">PREV</a>
                 {% else %}
-                <li><span class="button disabled">PREV</span></li>
+                <span class="button disabled" style="float:right;">PREV</span>
                 {% endif %}
-        </ul>
+
+
         
         <header class="main">
             <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
@@ -28,18 +29,16 @@ layout: default
 
         <hr class="major" />
 
-        <ul class="pagination" style="align-content: center;">
-                {% if page.next %} 
-                <li><a href="{{ page.next.url }}" class="button">NEXT</a></li>
-                {% else %}
-                <li><span class="button disabled">NEXT</span></li>                
-                {% endif %}
-                {% if page.previous %} 
-                <li><a href="{{ page.previous.url }}" class="button">PREV</a></li>
-                {% else %}
-                <li><span class="button disabled">PREV</span></li>
-                {% endif %}
-        </ul>
+        {% if page.next %} 
+        <a href="{{ page.next.url }}" class="button">NEXT</a>
+        {% else %}
+        <span class="button disabled">NEXT</span>              
+        {% endif %}
+        {% if page.previous %} 
+        <a href="{{ page.previous.url }}" class="button" style="float:right;">PREV</a>
+        {% else %}
+        <span class="button disabled" style="float:right;">PREV</span>
+        {% endif %}
 
 
     </section>
